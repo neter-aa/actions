@@ -1,0 +1,37 @@
+{
+    "forEach": {
+      "prefix": "fe",
+      "body": [
+        "${1:array}.forEach(function(item) {",
+        "\t${2:// body}",
+        "});"
+      ],
+      "description": "Code snippet for 'forEach'"
+    },
+    "setTimeout": {
+      "prefix": "st",
+      "body": [
+        "setTimeout(function() {",
+        "\t${0:// body}",
+        "}, ${1:1000});"
+      ],
+      "description": "Code snippet for 'setTimeout'"
+    },
+    "ajax": {
+      "prefix": "ajax",
+      "body": [
+          "$.ajax({",
+          "    url: '$1',",
+          "    method: '${2:POST}',",
+          "    datatype: 'json',",
+          "    success: data => {",
+          "        $3;",
+          "    },",
+          "    error: err => {",
+          "        $4;",
+          "    }",
+          "})"
+      ],
+      "description": "ajax模块"
+    }
+}
